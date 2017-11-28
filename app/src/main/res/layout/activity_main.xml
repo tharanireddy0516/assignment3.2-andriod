@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xml stands for extensible markup language
+    it is a background code of layouts,widges etc-->
+<!--Linear layout is one of the types of layout
+It aligns views one by one that is by vertically/horizontally
+layout_width indicates the width of the Linear layout
+layout_Height indicates the height of the Linear layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.creditcardhelper.MainActivity"
+    android:orientation="vertical"
+    android:background="#000">
+    <!--UL is built using a hierarchy of layouts and widgets-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background ="@android:color/background_dark">
+        <!--TextView is one of component of palette to display anything on layout
+        width indicates the width of the TextView
+        fill_parent fill the enter width
+        Height indicates the height of the TextView
+        what ever we write in text it displays in output
+        TextSize indicates the size of the text in sp units
+        TextColor indicates the color of text
+        string variables used to store the letters,numbers,symbols linked up with this program
+        it extracts string resource name and value in string.xml file
+        layout_weight is used when the label has no layout_weight specified
+        it takes up minimum space required to render-->
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter_card_balance"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+        <!--EditText is one of component of palette to display anything on layout
+        by using EditText we can edit anything or write anything
+       width indicates the width of the TextView
+       Height indicates the height of the TextView
+       wraps content wraps the enter content
+       what ever we write in text it displays in output
+       TextSize indicates the size of the text in sp units
+       TextColor indicates the color of text
+       fill_parent fills the enter width content
+        ems indicates the font size
+        -->
+        <!--
+        EditText is a user interface element for entering and modifying text
+        EditText where taken indicating email,password-->
+        <!--string variables used to store the letters,numbers,symbols linked up with this program
+         it extracts string resource name and value in string.xml file
+         by using textPersonName the user cannot insert new lines
+         -->
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:background="#cfcaca"
+            android:inputType="textPersonName"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background ="@android:color/background_dark">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter_yearly_interest_rate"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#cfcaca"
+            android:inputType="textPersonName"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background ="@android:color/background_dark">
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter_minimum_payment"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#cfcaca"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background ="@android:color/background_dark">
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/final_card_balance"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cfcaca"
+        android:inputType="textPersonName"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background ="@android:color/background_dark">
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/months_remaining"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#cfcaca"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background ="@android:color/background_dark">
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/interest_paid_will_be"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:id="@+id/edit6"
+        android:layout_width="160dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="40dp"
+        android:background="#cfcaca"
+        android:inputType="textPersonName"
+      />
+</LinearLayout>
+    <!--Button is a widget or view
+      height indicates height of button-->
+    <!--string variables used to store the letters,numbers,symbols linked up with this program
+         it extracts string resource name and value in string.xml file-->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compute"
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"/>
+
+</LinearLayout><!--Linear Layout ends here-->
